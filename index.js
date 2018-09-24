@@ -33,8 +33,8 @@ async function screenshot(page) {
 
       console.log('Waiting for compose form...')
       await page.waitForSelector('#sms_sendMsg_receiver')
-      await page.type('#sms_sendMsg_receiver', '1280')
-      await page.type('#sms_sendMsg_text', 'nog 1gb')
+      await page.type('#sms_sendMsg_receiver', process.env.SMS_RECEIVER)
+      await page.type('#sms_sendMsg_text', process.env.SMS_MESSAGE)
       await page.focus('#sms_compose button.section_submit')
       await click(page, '#sms_compose button.section_submit')
 
