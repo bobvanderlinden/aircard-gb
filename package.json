@@ -1,0 +1,11 @@
+{
+  "name": "aircard-gb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Bob van der Linden <bobvanderlinden@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^1.8.0"
+  }
+}
